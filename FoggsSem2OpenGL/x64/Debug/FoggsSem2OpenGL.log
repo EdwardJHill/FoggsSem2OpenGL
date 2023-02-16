@@ -1,0 +1,13 @@
+﻿  GreetingsGL.cpp
+  main.cpp
+  GLUTCallbacks.cpp
+  Generating Code...
+main.obj : error LNK2005: "public: __cdecl GreetingsGL::~GreetingsGL(void)" (??1GreetingsGL@@QEAA@XZ) already defined in GreetingsGL.obj
+GLUTCallbacks.obj : error LNK2005: "public: __cdecl GreetingsGL::~GreetingsGL(void)" (??1GreetingsGL@@QEAA@XZ) already defined in GreetingsGL.obj
+GreetingsGL.obj : error LNK2019: unresolved external symbol __imp_glutInitWindowSize referenced in function "public: __cdecl GreetingsGL::GreetingsGL(int,char * * const)" (??0GreetingsGL@@QEAA@HQEAPEAD@Z)
+GreetingsGL.obj : error LNK2019: unresolved external symbol __imp_glutMainLoop referenced in function "public: __cdecl GreetingsGL::GreetingsGL(int,char * * const)" (??0GreetingsGL@@QEAA@HQEAPEAD@Z)
+GreetingsGL.obj : error LNK2019: unresolved external symbol __imp_glutDisplayFunc referenced in function "public: __cdecl GreetingsGL::GreetingsGL(int,char * * const)" (??0GreetingsGL@@QEAA@HQEAPEAD@Z)
+GreetingsGL.obj : error LNK2019: unresolved external symbol __imp___glutInitWithExit referenced in function glutInit_ATEXIT_HACK
+GreetingsGL.obj : error LNK2019: unresolved external symbol __imp___glutCreateWindowWithExit referenced in function glutCreateWindow_ATEXIT_HACK
+freeglut.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\h013967m\source\repos\FoggsSem2OpenGL\x64\Debug\FoggsSem2OpenGL.exe : fatal error LNK1120: 5 unresolved externals
