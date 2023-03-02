@@ -1,3 +1,5 @@
 ﻿  GreetingsGL.cpp
-C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(37,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-  FoggsSem2OpenGL.vcxproj -> C:\Users\mredw\Source\Repos\EdwardJHill\FoggsSem2OpenGL\Debug\FoggsSem2OpenGL.exe
+C:\Users\h013967m\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(56,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\h013967m\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(108,23): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\h013967m\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(113,23): warning C4305: '-=': truncation from 'double' to 'float'
+  FoggsSem2OpenGL.vcxproj -> C:\Users\h013967m\Source\Repos\EdwardJHill\FoggsSem2OpenGL\Debug\FoggsSem2OpenGL.exe

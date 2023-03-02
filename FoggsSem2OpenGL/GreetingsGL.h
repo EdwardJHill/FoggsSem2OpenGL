@@ -5,6 +5,17 @@
 #include "GL\freeglut.h"
 #include "GLUTCallbacks.h"
 #define REFRESHRATE 16
+struct Vector3 {
+	float x;
+	float y;
+	float z;
+};
+struct Camera{
+	Vector3 eye;
+	Vector3 center;
+	Vector3 up;
+};
+
 class GreetingsGL
 {
 	public:
@@ -18,8 +29,11 @@ class GreetingsGL
 	void DrawPolygon();
 	void Update();
 	void Keyboard(unsigned char key, int x, int y);
+	void DrawCube();
 	private:
 		float rotation;
+		Camera* camera;
+		
 };
 
 
