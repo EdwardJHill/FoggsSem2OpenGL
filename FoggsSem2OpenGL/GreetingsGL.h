@@ -4,6 +4,7 @@
 #include <gl/GLU.h>
 #include "GL\freeglut.h"
 #include "GLUTCallbacks.h"
+#define REFRESHRATE 16
 class GreetingsGL
 {
 	public:
@@ -12,9 +13,13 @@ class GreetingsGL
 
 	//THE DESTRUCTOR
 	~GreetingsGL(void);
+
 	void Display();
 	void DrawPolygon();
-
+	void Update();
+	void Keyboard(unsigned char key, int x, int y);
+	private:
+		float rotation;
 };
 
 

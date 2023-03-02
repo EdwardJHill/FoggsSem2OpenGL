@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FoggsSem2OpenGL"
   ],
-  "SelectedNode": "\\FoggsSem2OpenGL.sln",
+  "SelectedNode": "\\FoggsSem2OpenGL\\GreetingsGL.cpp",
   "PreviewInSolutionExplorer": false
 }
