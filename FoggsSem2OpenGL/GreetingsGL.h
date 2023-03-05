@@ -15,6 +15,12 @@ struct Camera{
 	Vector3 center;
 	Vector3 up;
 };
+struct Color {
+	GLfloat r, g, b;
+};
+struct Vertex {
+	GLfloat x, y, z;
+};
 
 class GreetingsGL
 {
@@ -30,9 +36,16 @@ class GreetingsGL
 	void Update();
 	void Keyboard(unsigned char key, int x, int y);
 	void DrawCube();
+	void DrawCubeArray();
+	void DrawIndexCube();
 	private:
 		float rotation;
 		Camera* camera;
+		static Vertex vertices[];
+		static Color colors[];
+		static Vertex indexedVertices[];
+		static Color indexedColors[];
+		static GLushort indices[];
 		
 };
 

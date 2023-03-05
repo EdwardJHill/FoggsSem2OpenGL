@@ -1,5 +1,10 @@
-﻿  GreetingsGL.cpp
-C:\Users\h013967m\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(56,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\h013967m\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(108,23): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\h013967m\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(113,23): warning C4305: '-=': truncation from 'double' to 'float'
-  FoggsSem2OpenGL.vcxproj -> C:\Users\h013967m\Source\Repos\EdwardJHill\FoggsSem2OpenGL\Debug\FoggsSem2OpenGL.exe
+﻿  GLUTCallbacks.cpp
+  GreetingsGL.cpp
+C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(105,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(135,23): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(140,23): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(250,2): warning C4551: function call missing argument list
+C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(263,2): warning C4551: function call missing argument list
+  main.cpp
+  Generating Code...
+  FoggsSem2OpenGL.vcxproj -> C:\Users\mredw\Source\Repos\EdwardJHill\FoggsSem2OpenGL\Debug\FoggsSem2OpenGL.exe
