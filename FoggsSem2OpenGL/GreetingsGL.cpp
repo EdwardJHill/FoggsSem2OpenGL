@@ -87,37 +87,13 @@ void GreetingsGL::Display()
 	glPushMatrix();
 	//DrawCube();
 	//DrawPolygon();
-	DrawIndexCube();
+	//DrawIndexCube();
+	DrawIndexedCubeAlt();
 	glFlush();
 	glutSwapBuffers();
 
 }
-void GreetingsGL::DrawPolygon()
-{
-	glPushMatrix();
-	glTranslatef(0.0f, 0.0f, -20.0f);
-	
-	glRotatef(rotation, 1.0f, 1.0f, 0.5f);
-	glBegin(GL_POLYGON);
-	{
-		glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
-		glVertex2f(-0.25, -0.5);
-		glVertex2f(0.0, -0.1);
-		glVertex2f(0.25, -0.5);
-		glEnd();
 
-	}
-
-	glPopMatrix();
-	glPushMatrix();
-	glRotatef(rotation, 0.0f, 1.0f, -1.0f);
-	glutWireIcosahedron();
-	glutWireCube(0.5);
-	glutWireTeapot(0.1);
-
-	glPopMatrix();
-	
-}
 void GreetingsGL::Update()
 {
 	glLoadIdentity();
@@ -140,115 +116,8 @@ void GreetingsGL::Keyboard(unsigned char key, int x, int y)
 		camera->eye.z -= 0.1;
 	}
 }
-void GreetingsGL::DrawCube()
-{
-	glBegin(GL_TRIANGLES);
-	// face v0-v1-v2
-	glColor3f(1, 1, 1);
-	glVertex3f(1, 1, 1);
-	glColor3f(1, 1, 0);
-	glVertex3f(-1, 1, 1);
-	glColor3f(1, 0, 0);
-	glVertex3f(-1, -1, 1);
-	// face v2-v3-v0
-	glColor3f(1, 0, 0);
-	glVertex3f(-1, -1, 1);
-	glColor3f(1, 0, 1);
-	glVertex3f(1, -1, 1);
-	glColor3f(1, 1, 1);
-	glVertex3f(1, 1, 1);
 
-	// face v0-v3-v4
-	glColor3f(1, 1, 1);
-	glVertex3f(1, 1, 1);
-	glColor3f(1, 0, 1);
-	glVertex3f(1, -1, 1);
-	glColor3f(0, 0, 1);
-	glVertex3f(1, -1, -1);
-	// face v4-v5-v0
-	glColor3f(0, 0, 1);
-	glVertex3f(1, -1, -1);
-	glColor3f(0, 1, 1);
-	glVertex3f(1, 1, -1);
-	glColor3f(1, 1, 1);
-	glVertex3f(1, 1, 1);
 
-	// face v0-v5-v6
-	glColor3f(1, 1, 1);
-	glVertex3f(1, 1, 1);
-	glColor3f(0, 1, 1);
-	glVertex3f(1, 1, -1);
-	glColor3f(0, 1, 0);
-	glVertex3f(-1, 1, -1);
-	// face v6-v1-v0
-	glColor3f(0, 1, 0);
-	glVertex3f(-1, 1, -1);
-	glColor3f(1, 1, 0);
-	glVertex3f(-1, 1, 1);
-	glColor3f(1, 1, 1);
-	glVertex3f(1, 1, 1);
-
-	// face  v1-v6-v7
-	glColor3f(1, 1, 0);
-	glVertex3f(-1, 1, 1);
-	glColor3f(0, 1, 0);
-	glVertex3f(-1, 1, -1);
-	glColor3f(0, 0, 0);
-	glVertex3f(-1, -1, -1);
-	// face v7-v2-v1
-	glColor3f(0, 0, 0);
-	glVertex3f(-1, -1, -1);
-	glColor3f(1, 0, 0);
-	glVertex3f(-1, -1, 1);
-	glColor3f(1, 1, 0);
-	glVertex3f(-1, 1, 1);
-	// face v7-v4-v3
-	glColor3f(0, 0, 0);
-	glVertex3f(-1, -1, -1);
-	glColor3f(0, 0, 1);
-	glVertex3f(1, -1, -1);
-	glColor3f(1, 0, 1);
-	glVertex3f(1, -1, 1);
-	// face v3-v2-v7
-	glColor3f(1, 0, 1);
-	glVertex3f(1, -1, 1);
-	glColor3f(1, 0, 0);
-	glVertex3f(-1, -1, 1);
-	glColor3f(0, 0, 0);
-	glVertex3f(-1, -1, -1);
-
-	// face v4-v7-v6
-	glColor3f(0, 0, 1);
-	glVertex3f(1, -1, -1);
-	glColor3f(0, 0, 0);
-	glVertex3f(-1, -1, -1);
-	glColor3f(0, 1, 0);
-	glVertex3f(-1, 1, -1);
-	// face v6-v5-v4
-	glColor3f(0, 1, 0);
-	glVertex3f(-1, 1, -1);
-	glColor3f(0, 1, 1);
-	glVertex3f(1, 1, -1);
-	glColor3f(0, 0, 1);
-	glVertex3f(1, -1, -1);
-
-	glEnd();
-}
-void GreetingsGL::DrawCubeArray()
-{
-	glPushMatrix();
-	
-	glBegin(GL_TRIANGLES);
-	for (int i = 0; i < 36; i++)
-	{
-		//glColor3f(colors[i].r, colors[i].g,colors[i].b);
-		//glVertex3f(vertices[i].x, vertices[i].y, vertices[i].z);
-		glColor3fv(&colors[i].r);
-		glVertex3fv(&vertices[i].x);
-	}
-	glEnd();
-	glPopMatrix;
-}
 void GreetingsGL::DrawIndexCube()
 {
 	glPushMatrix();
@@ -262,6 +131,35 @@ void GreetingsGL::DrawIndexCube()
 	glEnd();
 	glPopMatrix;
 }
+void GreetingsGL::DrawCubeArrayAlt()
+{
+	glEnableClientState(GL_VERTEX_ARRAY);
+	glEnableClientState(GL_COLOR_ARRAY);
+	glVertexPointer(3, GL_FLOAT, 0, vertices);
+	glColorPointer(3, GL_FLOAT, 0, colors);
+
+	glPushMatrix();
+	glDrawArrays(GL_TRIANGLES, 0, 36);
+	glPopMatrix();
+
+	glDisableClientState(GL_COLOR_ARRAY);
+	glDisableClientState(GL_VERTEX_ARRAY);
+}
+void GreetingsGL::DrawIndexedCubeAlt()
+{
+	glEnableClientState(GL_VERTEX_ARRAY);
+	glEnableClientState(GL_COLOR_ARRAY);
+	glVertexPointer(3, GL_FLOAT, 0, indexedVertices);
+	glColorPointer(3, GL_FLOAT, 0, indexedColors);
+
+	glPushMatrix();
+	glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, indices);
+	glPopMatrix();
+
+	glDisableClientState(GL_COLOR_ARRAY);
+	glDisableClientState(GL_VERTEX_ARRAY);
+}
+
 
 
 
