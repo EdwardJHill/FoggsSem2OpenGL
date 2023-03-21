@@ -5,12 +5,14 @@
 #include "GL\freeglut.h"
 #include "GLUTCallbacks.h"
 #include "Structures.h"
+#include "Cube.h"
 #define REFRESHRATE 16
+#define CUBECOUNT 200
 
 
 class GreetingsGL
 {
-	public:
+public:
 	//Constructor definition
 	GreetingsGL(int argc, char* argv[]);
 
@@ -18,22 +20,28 @@ class GreetingsGL
 	~GreetingsGL(void);
 
 	void Display();
-	void DrawPolygon();
+
 	void Update();
 	void Keyboard(unsigned char key, int x, int y);
+	/*
+	void DrawPolygon();
 	void DrawCube();
 	void DrawCubeArray();
 	void DrawIndexCube();
 	void DrawCubeArrayAlt();
 	void DrawIndexedCubeAlt();
-	private:
-		float rotation;
-		Camera* camera;
+	*/
+private:
+	float rotation;
+	Camera* camera;
+	Cube* cube[CUBECOUNT];
+		/*
 		static Vertex vertices[];
 		static Color colors[];
 		static Vertex indexedVertices[];
 		static Color indexedColors[];
 		static GLushort indices[];
+		*/
 		
 };
 

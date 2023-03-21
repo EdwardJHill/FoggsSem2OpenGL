@@ -1,11 +1,14 @@
 ﻿  Cube.cpp
   GreetingsGL.cpp
-C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(106,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(136,23): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(141,23): warning C4305: '-=': truncation from 'double' to 'float'
-C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(251,2): warning C4551: function call missing argument list
-C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(264,2): warning C4551: function call missing argument list
+C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(46,13): warning C4156: deletion of an array expression without using the array form of 'delete'; array form substituted
+C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(46,13): warning C4154: deletion of an array expression; conversion to pointer supplied
+C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(79,23): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(83,23): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(87,23): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(91,23): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(95,23): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\FoggsSem2OpenGL\GreetingsGL.cpp(99,23): warning C4305: '-=': truncation from 'double' to 'float'
   main.cpp
   GLUTCallbacks.cpp
   Generating Code...
-  FoggsSem2OpenGL.vcxproj -> C:\Users\mredw\Source\Repos\EdwardJHill\FoggsSem2OpenGL\Debug\FoggsSem2OpenGL.exe
+  FoggsSem2OpenGL.vcxproj -> C:\Users\mredw\source\repos\EdwardJHill\FoggsSem2OpenGL\Debug\FoggsSem2OpenGL.exe
